@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/annualreport/static/css/main.beb85877.css",
+    "main.js": "/annualreport/static/js/main.40c62abb.js",
+    "index.html": "/annualreport/index.html",
+    "main.beb85877.css.map": "/annualreport/static/css/main.beb85877.css.map",
+    "main.40c62abb.js.map": "/annualreport/static/js/main.40c62abb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.beb85877.css",
+    "static/js/main.40c62abb.js"
+  ]
+}
