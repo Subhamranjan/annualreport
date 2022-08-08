@@ -1,837 +1,827 @@
+// import React from 'react'
 import React ,{useState}from 'react';
 import './App.css';
 
-function App() {
+function  Post() {
 
 // Question
 
 const [Q1, setQ1] = useState(null);
 const [QQ1, setQQ1] = useState(false);
 
-// const [Q2, setQ2] = useState(null);
-// const [QQ2, setQQ2] = useState(false);
+const [Q2, setQ2] = useState(null);
+const [QQ2, setQQ2] = useState(false);
 
-// const [Q3, setQ3] = useState(null);
-// const [QQ3, setQQ3] = useState(false);
+const [Q3, setQ3] = useState(null);
+const [QQ3, setQQ3] = useState(false);
 
-// const [Q4, setQ4] = useState(null);
-// const [QQ4, setQQ4] = useState(false);
+const [Q4, setQ4] = useState(null);
+const [QQ4, setQQ4] = useState(false);
 
-// const [Q5, setQ5] = useState(null);
-// const [QQ5, setQQ5] = useState(false);
+const [Q5, setQ5] = useState(null);
+const [QQ5, setQQ5] = useState(false);
 
-// const [Q6, setQ6] = useState(null);
-// const [QQ6, setQQ6] = useState(false);
+const [Q6, setQ6] = useState(null);
+const [QQ6, setQQ6] = useState(false);
 
-// const [Q7, setQ7] = useState(null);
-// const [QQ7, setQQ7] = useState(false);
+const [Q7, setQ7] = useState(null);
+const [QQ7, setQQ7] = useState(false);
 
-// const [Q8, setQ8] = useState(null);
-// const [QQ8, setQQ8] = useState(false);
+const [Q8, setQ8] = useState(null);
+const [QQ8, setQQ8] = useState(false);
 
-// const [Q9, setQ9] = useState(null);
-// const [QQ9, setQQ9] = useState(false);
+const [Q9, setQ9] = useState(null);
+const [QQ9, setQQ9] = useState(false);
 
-// const [Q10, setQ10] = useState(null);
-// const [QQ10, setQQ10] = useState(false);
+const [Q10, setQ10] = useState(null);
+const [QQ10, setQQ10] = useState(false);
 
-// const [Q11, setQ11] = useState(null);
-// const [QQ11, setQQ11] = useState(false);
+const [Q11, setQ11] = useState(null);
+const [QQ11, setQQ11] = useState(false);
 
-// const [Q12, setQ12] = useState(null);
-// const [QQ12, setQQ12] = useState(false);
+const [Q12, setQ12] = useState(null);
+const [QQ12, setQQ12] = useState(false);
 
-// const [Q13, setQ13] = useState(null);
-// const [QQ13, setQQ13] = useState(false);
+const [Q13, setQ13] = useState(null);
+const [QQ13, setQQ13] = useState(false);
 
-// const [Q14, setQ14] = useState(null);
-// const [QQ14, setQQ14] = useState(false);
+const [Q14, setQ14] = useState(null);
+const [QQ14, setQQ14] = useState(false);
 
-// const [Q15, setQ15] = useState(null);
-// const [QQ15, setQQ15] = useState(false);
+const [Q15, setQ15] = useState(null);
+const [QQ15, setQQ15] = useState(false);
 
-// const [Q16, setQ16] = useState(null);
-// const [QQ16, setQQ16] = useState(false);
+const [Q16, setQ16] = useState(null);
+const [QQ16, setQQ16] = useState(false);
 
-// const [Q17, setQ17] = useState(null);
-// const [QQ17, setQQ17] = useState(false);
+const [Q17, setQ17] = useState(null);
+const [QQ17, setQQ17] = useState(false);
 
-// const [Q18, setQ18] = useState(null);
-// const [QQ18, setQQ18] = useState(false);
+const [Q18, setQ18] = useState(null);
+const [QQ18, setQQ18] = useState(false);
 
 //profit loss statement  
+const [SOP, setSOP] = useState("");
+const [OOR, setOOR] = useState("");
+const [SOS, setSOS] = useState("");
+const [OP1, setOP1] = useState(SOS + SOP + OOR);
 
-// const [SOP, setSOP] = useState("");
-// const [OOR, setOOR] = useState("");
-// const [SOS, setSOS] = useState("");
-// const [OP1, setOP1] = useState(SOS + SOP + OOR);
+const [TR1, setTR1] = useState("");
+const [TOE1, setTOE1] = useState("");
+const [IEI1, setIEI1] = useState("");
+const [PBT1, setPBT1] = useState(TR1 - TOE1 -IEI1 );
 
-// const [TR1, setTR1] = useState("");
-// const [TOE1, setTOE1] = useState("");
-// const [IEI1, setIEI1] = useState("");
-// const [PBT1, setPBT1] = useState(TR1 - TOE1 -IEI1 );
+const [PBT2, setPBT2] = useState("");
+const [TE1, setTE1] = useState("");
+const [PAT1, setPAT1] = useState(PBT2 - TE1);
 
-// const [PBT2, setPBT2] = useState("");
-// const [TE1, setTE1] = useState("");
-// const [PAT1, setPAT1] = useState(PBT2 - TE1);
-
-// const [PATs, setPATs] = useState("");
-// const [OOS, setOOS] = useState("");
-// const [EPS, setEPS] = useState(PATs / OOS);
-// const [value, setvalue] = useState('');
+const [PATs, setPATs] = useState("");
+const [OOS, setOOS] = useState("");
+const [EPS, setEPS] = useState(PATs / OOS);
+const [value, setvalue] = useState('');
 
 // Balance sheet 
-// const [ASS1, setASS1] = useState("");
-// const [LIA1, setLIA1] = useState("");
-// const [SHE1, setSHE1] = useState(ASS1 - LIA1);
+const [ASS1, setASS1] = useState("");
+const [LIA1, setLIA1] = useState("");
+const [SHE1, setSHE1] = useState(ASS1 - LIA1);
 
-// const [FV1, setFV1] = useState("");
-// const [NOS1, setNOS1] = useState("");
-// const [SC1, setSC1] = useState(FV1 * NOS1 );
+const [FV1, setFV1] = useState("");
+const [NOS1, setNOS1] = useState("");
+const [SC1, setSC1] = useState(FV1 * NOS1 );
 
-// const [SC2, setSC2] = useState("");
-// const [FV2, setFV2] = useState("");
-// const [NOS2, setNOS2] = useState(SC2 / FV2);
+const [SC2, setSC2] = useState("");
+const [FV2, setFV2] = useState("");
+const [NOS2, setNOS2] = useState(SC2 / FV2);
 
-// const [SHF1, setSHF1] = useState("");
-// const [NCL1, setNCL1] = useState("");
-// const [CL1, setCL1] = useState("");
-// const [TL1, setTL1] = useState(SHF1 + NCL1 + CL1);
+const [SHF1, setSHF1] = useState("");
+const [NCL1, setNCL1] = useState("");
+const [CL1, setCL1] = useState("");
+const [TL1, setTL1] = useState(SHF1 + NCL1 + CL1);
 
-// const [SC3, setSC3] = useState("");
-// const [R1, setR1] = useState("");
-// const [S1, setS1] = useState("");
-// const [SHE2, setSHE2] = useState(SC3 + R1 + S1);
+const [SC3, setSC3] = useState("");
+const [R1, setR1] = useState("");
+const [S1, setS1] = useState("");
+const [SHE2, setSHE2] = useState(SC3 + R1 + S1);
 
-// const [PYDB1, setPYDB1] = useState("");
-// const [ADY1, setADY1] = useState("");
-// const [DDY1, setDDY1] = useState("");
-// const [GB1, setGB1] = useState(PYDB1 + ADY1 - DDY1 );
+const [PYDB1, setPYDB1] = useState("");
+const [ADY1, setADY1] = useState("");
+const [DDY1, setDDY1] = useState("");
+const [GB1, setGB1] = useState(PYDB1 + ADY1 - DDY1 );
 
-// const [PYDV1, setPYDV1] = useState("");
-// const [CYD1, setCYD1] = useState("");
-// const [DDY2, setDDY2] = useState("");
-// const [TD1, setTD1] = useState(PYDV1 - CYD1 - DDY2 );
+const [PYDV1, setPYDV1] = useState("");
+const [CYD1, setCYD1] = useState("");
+const [DDY2, setDDY2] = useState("");
+const [TD1, setTD1] = useState(PYDV1 - CYD1 - DDY2 );
 
-// const [GB2, setGB2] = useState("");
-// const [TD2, setTD2] = useState("");
-// const [NB1, setNB1] = useState(GB2 - TD2);
+const [GB2, setGB2] = useState("");
+const [TD2, setTD2] = useState("");
+const [NB1, setNB1] = useState(GB2 - TD2);
 
-// const [FA1, setFA1] = useState("");
-// const [CA1, setCA1] = useState("");
-// const [TA1, setTA1] = useState(FA1 + CA1);
+const [FA1, setFA1] = useState("");
+const [CA1, setCA1] = useState("");
+const [TA1, setTA1] = useState(FA1 + CA1);
 
-// const [SHF2, setSHF2] = useState("");
-// const [LIA2, setLIA2] = useState("");
-// const [ASS2, setASS2] = useState(SHF2 + LIA2);
+const [SHF2, setSHF2] = useState("");
+const [LIA2, setLIA2] = useState("");
+const [ASS2, setASS2] = useState(SHF2 + LIA2);
 
 //Cash flow
-// const [NCOA1, setNCOA1] = useState("");
-// const [NCIA1, setNCIA1] = useState("");
-// const [NCFA1, setNCFA1] = useState("");
-// const [CF1, setCF1] = useState(NCOA1 + NCIA1 + NCFA1);
+const [NCOA1, setNCOA1] = useState("");
+const [NCIA1, setNCIA1] = useState("");
+const [NCFA1, setNCFA1] = useState("");
+const [CF1, setCF1] = useState(NCOA1 + NCIA1 + NCFA1);
 
 // Profitability ratius
-// const [OR1, setOR1] = useState("");
-// const [OE1, setOE1] = useState("");
-// const [EBIT1, setEBIT1] = useState(OR1 - OE1 );
+const [OR1, setOR1] = useState("");
+const [OE1, setOE1] = useState("");
+const [EBIT1, setEBIT1] = useState(OR1 - OE1 );
 
-// const [TR2, setTR2] = useState("");
-// const [OI1, setOI1] = useState("");
-// const [OR2, setOR2] = useState(TR2 - OI1);
+const [TR2, setTR2] = useState("");
+const [OI1, setOI1] = useState("");
+const [OR2, setOR2] = useState(TR2 - OI1);
 
-// const [TE2, setTE2] = useState("");
-// const [FC1, setFC1] = useState("");
-// const [DA1, setDA1] = useState("");
-// const [OE2, setOE2] = useState(TE2 - FC1 - DA1);
+const [TE2, setTE2] = useState("");
+const [FC1, setFC1] = useState("");
+const [DA1, setDA1] = useState("");
+const [OE2, setOE2] = useState(TE2 - FC1 - DA1);
 
-// const [EBIT2, setEBIT2] = useState("");
-// const [OR3, setOR3] = useState("");
-// const [EBIT3, setEBIT3] = useState(EBIT2 / OR3);
+const [EBIT2, setEBIT2] = useState("");
+const [OR3, setOR3] = useState("");
+const [EBIT3, setEBIT3] = useState(EBIT2 / OR3);
 
-// const [PAT2, setPAT2] = useState("");
-// const [TR3, setTR3] = useState("");
-// const [PATM1, setPATM1] = useState(PAT2 / TR3 );
+const [PAT2, setPAT2] = useState("");
+const [TR3, setTR3] = useState("");
+const [PATM1, setPATM1] = useState(PAT2 / TR3 );
 
 
-// const [NP1, setNP1] = useState("");
-// const [SHE3, setSHE3] = useState("");
-// const [ROE1, setROE1] = useState( NP1 / SHE3 *100);
+const [NP1, setNP1] = useState("");
+const [SHE3, setSHE3] = useState("");
+const [ROE1, setROE1] = useState( NP1 / SHE3 *100);
 
-// const [NP2, setNP2] = useState("");
-// const [NS1, setNS1] = useState("");
-// const [NPM1, setNPM1] = useState(NP2 / NS1 *100);
+const [NP2, setNP2] = useState("");
+const [NS1, setNS1] = useState("");
+const [NPM1, setNPM1] = useState(NP2 / NS1 *100);
 
-// const [NS2, setNS2] = useState("");
-// const [ATA1, setATA1] = useState("");
-// const [AT1, setAT1] = useState(NS2 / ATA1);
+const [NS2, setNS2] = useState("");
+const [ATA1, setATA1] = useState("");
+const [AT1, setAT1] = useState(NS2 / ATA1);
 
-// const [ATA2, setATA2] = useState("");
-// const [SHE4, setSHE4] = useState("");
-// const [FL1, setFL1] = useState(ATA2 / SHE4);
+const [ATA2, setATA2] = useState("");
+const [SHE4, setSHE4] = useState("");
+const [FL1, setFL1] = useState(ATA2 / SHE4);
 
-// const [NI1, setNI1] = useState("");
-// const [I1, setI1] = useState("");
-// const [TR4, setTR4] = useState("");
-// const [TAA1, setTAA1] = useState("");
-// const [ROA1, setROA1] = useState(NI1 + I1 *(1 - TR4) / TAA1);
+const [NI1, setNI1] = useState("");
+const [I1, setI1] = useState("");
+const [TR4, setTR4] = useState("");
+const [TAA1, setTAA1] = useState("");
+const [ROA1, setROA1] = useState(NI1 + I1 *(1 - TR4) / TAA1);
 
-// const [LAA1, setLAA1] = useState("");
-// const [RAA1, setRAA1] = useState("");
-// const [TAA2, setTAA2] = useState(LAA1 + RAA1 /2);
+const [LAA1, setLAA1] = useState("");
+const [RAA1, setRAA1] = useState("");
+const [TAA2, setTAA2] = useState(LAA1 + RAA1 /2);
 
-// const [PBIT1, setPBIT1] = useState("");
-// const [OCE1, setOCE1] = useState("");
-// const [ROCE1, setROCE1] = useState(PBIT1 * OCE1 );
+const [PBIT1, setPBIT1] = useState("");
+const [OCE1, setOCE1] = useState("");
+const [ROCE1, setROCE1] = useState(PBIT1 * OCE1 );
 
-// const [STD1, setSTD1] = useState("");
-// const [LTD1, setLTD1] = useState("");
-// const [E1, setE1] = useState("");
-// const [OCE2, setOCE2] = useState(STD1 + LTD1 + E1);
+const [STD1, setSTD1] = useState("");
+const [LTD1, setLTD1] = useState("");
+const [E1, setE1] = useState("");
+const [OCE2, setOCE2] = useState(STD1 + LTD1 + E1);
 
 // Leverage ratius
-// const [EBIT4, setEBIT4] = useState("");
-// const [FA2, setFA2] = useState("");
-// const [ICR1, setICR1] = useState(EBIT4 / FA2);
+const [EBIT4, setEBIT4] = useState("");
+const [FA2, setFA2] = useState("");
+const [ICR1, setICR1] = useState(EBIT4 / FA2);
 
-// const [EBITDA1, setEBITDA1] = useState("");
-// const [DA2, setDA2] = useState("");
-// const [EBIT5, setEBIT5] = useState(EBITDA1 - DA2);
+const [EBITDA1, setEBITDA1] = useState("");
+const [DA2, setDA2] = useState("");
+const [EBIT5, setEBIT5] = useState(EBITDA1 - DA2);
 
-// const [R2, setR2] = useState("");
-// const [E2, setE2] = useState("");
-// const [FC2, setFC2] = useState("");
-// const [D1, setD1] = useState("");
-// const [EBITDA2, setEBITDA2] = useState(R2 - E2 -(FC2 - D1));
+const [R2, setR2] = useState("");
+const [E2, setE2] = useState("");
+const [FC2, setFC2] = useState("");
+const [D1, setD1] = useState("");
+const [EBITDA2, setEBITDA2] = useState(R2 - E2 -(FC2 - D1));
 
-// const [TD3, setTD3] = useState("");
-// const [TE3, setTE3] = useState("");
-// const [DTER1, setDTER1] = useState(TD3 / TE3);
+const [TD3, setTD3] = useState("");
+const [TE3, setTE3] = useState("");
+const [DTER1, setDTER1] = useState(TD3 / TE3);
 
-// const [LTB1, setLTB1] = useState("");
-// const [STB1, setSTB1] = useState("");
-// const [TD4, setTD4] = useState(LTB1 + STB1);
+const [LTB1, setLTB1] = useState("");
+const [STB1, setSTB1] = useState("");
+const [TD4, setTD4] = useState(LTB1 + STB1);
 
-// const [TD5, setTD5] = useState("");
-// const [TA2, setTA2] = useState("");
-// const [DTAR1, setDTAR1] = useState(TD5 / TA2);
+const [TD5, setTD5] = useState("");
+const [TA2, setTA2] = useState("");
+const [DTAR1, setDTAR1] = useState(TD5 / TA2);
 
-// const [LA1, setLA1] = useState("");
-// const [RA1, setRA1] = useState("");
-// const [ATA7, setATA7] = useState(LA1 + RA1 /2);
+const [LA1, setLA1] = useState("");
+const [RA1, setRA1] = useState("");
+const [ATA7, setATA7] = useState(LA1 + RA1 /2);
 
-// const [LATA1, setLATA1] = useState("");
-// const [RATA1, setRATA1] = useState("");
-// const [ATA3, setATA3] = useState(LATA1 + RATA1 /2);
+const [LATA1, setLATA1] = useState("");
+const [RATA1, setRATA1] = useState("");
+const [ATA3, setATA3] = useState(LATA1 + RATA1 /2);
 
-// const [LATE1, setLATE1] = useState("");
-// const [RATE1, setRATE1] = useState("");
-// const [ATE1, setATE1] = useState(LATE1 + RATE1 /2);
+const [LATE1, setLATE1] = useState("");
+const [RATE1, setRATE1] = useState("");
+const [ATE1, setATE1] = useState(LATE1 + RATE1 /2);
 
-// const [ATA4, setATA4] = useState("");
-// const [ATE, setATE] = useState("");
-// const [FLR1, setFLR1] = useState(ATA4 + ATE);
+const [ATA4, setATA4] = useState("");
+const [ATE, setATE] = useState("");
+const [FLR1, setFLR1] = useState(ATA4 + ATE);
 
 //Valuation Ratio
-// const [CSP1, setCSP1] = useState("");
-// const [SPS1, setSPS1] = useState("");
-// const [PSR1, setPSR1] = useState(CSP1 / SPS1);
+const [CSP1, setCSP1] = useState("");
+const [SPS1, setSPS1] = useState("");
+const [PSR1, setPSR1] = useState(CSP1 / SPS1);
 
-// const [TR5, setTR5] = useState("");
-// const [NOS3, setNOS3] = useState("");
-// const [SPS6, setSPS6] = useState(TR5 / NOS3 );
+const [TR5, setTR5] = useState("");
+const [NOS3, setNOS3] = useState("");
+const [SPS6, setSPS6] = useState(TR5 / NOS3 );
 
-// const [SC4, setSC4] = useState("");
-// const [R3, setR3] = useState("");
-// const [RR1, setRR1] = useState("");
-// const [TOS1, setTOS1] = useState("");
-// const [BV1, setBV1] = useState(SC4 + R3 - RR1 / TOS1);
+const [SC4, setSC4] = useState("");
+const [R3, setR3] = useState("");
+const [RR1, setRR1] = useState("");
+const [TOS1, setTOS1] = useState("");
+const [BV1, setBV1] = useState(SC4 + R3 - RR1 / TOS1);
 
-// const [CSP2, setCSP2] = useState("");
-// const [BV2, setBV2] = useState("");
-// const [PBV1, setPBV1] = useState(CSP2 / BV2 );
+const [CSP2, setCSP2] = useState("");
+const [BV2, setBV2] = useState("");
+const [PBV1, setPBV1] = useState(CSP2 / BV2 );
 
-// const [PAT3, setPAT3] = useState("");
-// const [TOS2, setTOS2] = useState("");
-// const [EPS3, setEPS3] = useState(PAT3 / TOS2);
+const [PAT3, setPAT3] = useState("");
+const [TOS2, setTOS2] = useState("");
+const [EPS3, setEPS3] = useState(PAT3 / TOS2);
 
-// const [CSP3, setCSP3] = useState("");
-// const [EPS4, setEPS4] = useState("");
-// const [PER1, setPER1] = useState(CSP3 / EPS4 );
+const [CSP3, setCSP3] = useState("");
+const [EPS4, setEPS4] = useState("");
+const [PER1, setPER1] = useState(CSP3 / EPS4 );
 
 
 // OPerating ratius
-// const [OR4, setOR4] = useState("");
-// const [TAT1, setTAT1] = useState("");
-// const [FAT1, setFAT1] = useState(OR4 - TAT1);
+const [OR4, setOR4] = useState("");
+const [TAT1, setTAT1] = useState("");
+const [FAT1, setFAT1] = useState(OR4 - TAT1);
 
-// const [LATA2, setLATA2] = useState("");
-// const [RATA2, setRATA2] = useState("");
-// const [TAT2, setTAT2] = useState(LATA2 + RATA2 /2);
+const [LATA2, setLATA2] = useState("");
+const [RATA2, setRATA2] = useState("");
+const [TAT2, setTAT2] = useState(LATA2 + RATA2 /2);
 
-// const [LCA2, setLCA2] = useState("");
-// const [LCL2, setLCL2] = useState("");
-// const [LWC, setLWC] = useState(LCA2 + LCL2);
+const [LCA2, setLCA2] = useState("");
+const [LCL2, setLCL2] = useState("");
+const [LWC, setLWC] = useState(LCA2 + LCL2);
 
-// const [RCA2, setRCA2] = useState("");
-// const [RCL2, setRCL2] = useState("");
-// const [RWC, setRWC] = useState(RCA2 + RCL2);
+const [RCA2, setRCA2] = useState("");
+const [RCL2, setRCL2] = useState("");
+const [RWC, setRWC] = useState(RCA2 + RCL2);
 
-// const [LWC1, setLWC1] = useState("");
-// const [RWC1, setRWC1] = useState("");
-// const [AWC1, setAWC1] = useState(LWC1 + RWC1 /2);
+const [LWC1, setLWC1] = useState("");
+const [RWC1, setRWC1] = useState("");
+const [AWC1, setAWC1] = useState(LWC1 + RWC1 /2);
 
-// const [R5, setR5] = useState("");
-// const [AWC2, setAWC2] = useState("");
-// const [WCT1, setWCT1] = useState(R5 / AWC2 );
+const [R5, setR5] = useState("");
+const [AWC2, setAWC2] = useState("");
+const [WCT1, setWCT1] = useState(R5 / AWC2 );
 
-// const [LATA3, setLATA3] = useState("");
-// const [RATA3, setRATA3] = useState("");
-// const [ATA6, setATA6] = useState(LATA3 + RATA3 /2);
+const [LATA3, setLATA3] = useState("");
+const [RATA3, setRATA3] = useState("");
+const [ATA6, setATA6] = useState(LATA3 + RATA3 /2);
 
-// const [OR5, setOR5] = useState("");
-// const [ATA5, setATA5] = useState("");
-// const [TAT3, setTAT3] = useState(OR5 / ATA5);
+const [OR5, setOR5] = useState("");
+const [ATA5, setATA5] = useState("");
+const [TAT3, setTAT3] = useState(OR5 / ATA5);
 
-// const [COGS1, setCOGS1] = useState("");
-// const [AI1, setAI1] = useState("");
-// const [IT1, setIT1] = useState(COGS1 / AI1 );
+const [COGS1, setCOGS1] = useState("");
+const [AI1, setAI1] = useState("");
+const [IT1, setIT1] = useState(COGS1 / AI1 );
 
-// const [LAT1, setLAT1] = useState("");
-// const [RAT1, setRAT1] = useState("");
-// const [AI2, setAI2] = useState( LAT1 + RAT1 /2);
+const [LAT1, setLAT1] = useState("");
+const [RAT1, setRAT1] = useState("");
+const [AI2, setAI2] = useState( LAT1 + RAT1 /2);
 
-// const [COMC1, setCOMC1] = useState("");
-// const [POST1, setPOST1] = useState("");
-// const [SSC1, setSSC1] = useState("");
-// const [PF1, setPF1] = useState("");
-// const [COGS2, setCOGS2] = useState(COMC1 + POST1 + SSC1 + PF1);
+const [COMC1, setCOMC1] = useState("");
+const [POST1, setPOST1] = useState("");
+const [SSC1, setSSC1] = useState("");
+const [PF1, setPF1] = useState("");
+const [COGS2, setCOGS2] = useState(COMC1 + POST1 + SSC1 + PF1);
 
-// const [IT2, setIT2] = useState("");
-// const [IND1, setIND1] = useState( 365 / IT2 );
+const [IT2, setIT2] = useState("");
+const [IND1, setIND1] = useState( 365 / IT2 );
 
-// const [R4, setR4] = useState("");
-// const [AR1, setAR1] = useState("");
-// const [RTR1, setRTR1] = useState(R4 / AR1);
+const [R4, setR4] = useState("");
+const [AR1, setAR1] = useState("");
+const [RTR1, setRTR1] = useState(R4 / AR1);
 
-// const [LAR, setLAR] = useState("");
-// const [RAR, setRAR] = useState("");
-// const [AR2, setAR2] = useState(LAR + RAR /2);
+const [LAR, setLAR] = useState("");
+const [RAR, setRAR] = useState("");
+const [AR2, setAR2] = useState(LAR + RAR /2);
 
-// const [RTR2, setRTR2] = useState("");
-// const [DSO1, setDSO1] = useState( 365 / RTR2);
+const [RTR2, setRTR2] = useState("");
+const [DSO1, setDSO1] = useState( 365 / RTR2);
 
 
 //EXTRA 
-// const [GP1, setGP1] = useState("");
-// const [NS3, setNS3] = useState("");
-// const [GPM1, setGPM1] = useState(GP1 * NS3 );
+const [GP1, setGP1] = useState("");
+const [NS3, setNS3] = useState("");
+const [GPM1, setGPM1] = useState(GP1 * NS3 );
 
-// const [NS4, setNS4] = useState("");
-// const [COGS3, setCOGS3] = useState("");
-// const [GP2, setGP2] = useState(NS4 - COGS3);
+const [NS4, setNS4] = useState("");
+const [COGS3, setCOGS3] = useState("");
+const [GP2, setGP2] = useState(NS4 - COGS3);
 
-// const [A1, setA1] = useState("");
-// const [OCR1, setOCR1] = useState("");
-// const [NOY1, setNOY1] = useState("");
-// const [FV3, setFV3] = useState(A1 *(+ OCR1)^ NOY1);
+const [A1, setA1] = useState("");
+const [OCR1, setOCR1] = useState("");
+const [NOY1, setNOY1] = useState("");
+const [FV3, setFV3] = useState(A1 *(+ OCR1)^ NOY1);
 
-// const [A2, setA2] = useState("");
-// const [DR1, setDR1] = useState("");
-// const [NOY2, setNOY2] = useState("");
-// const [PV1, setPV1] = useState(A2 *(+ DR1)^ NOY2);
+const [A2, setA2] = useState("");
+const [DR1, setDR1] = useState("");
+const [NOY2, setNOY2] = useState("");
+const [PV1, setPV1] = useState(A2 *(+ DR1)^ NOY2);
 
-// const [COA1, setCOA1] = useState("");
-// const [CE1, setCE1] = useState("");
-// const [FCF1, setFCF1] = useState(COA1 - CE1);
+const [COA1, setCOA1] = useState("");
+const [CE1, setCE1] = useState("");
+const [FCF1, setFCF1] = useState(COA1 - CE1);
 
-// const [PV2, setPV2] = useState("");
-// const [GR1, setGR1] = useState("");
-// const [FCF3, setFCF3] = useState(PV2 * (1 + GR1));
+const [PV2, setPV2] = useState("");
+const [GR1, setGR1] = useState("");
+const [FCF3, setFCF3] = useState(PV2 * (1 + GR1));
 
-// const [FCF2, setFCF2] = useState("");
-// const [TGR1, setTGR1] = useState("");
-// const [DR2, setDR2] = useState("");
-// const [TV1, setTV1] = useState(FCF2 *(1+ TGR1)/ (DR2 - TGR1 ));
+const [FCF2, setFCF2] = useState("");
+const [TGR1, setTGR1] = useState("");
+const [DR2, setDR2] = useState("");
+const [TV1, setTV1] = useState(FCF2 *(1+ TGR1)/ (DR2 - TGR1 ));
 
-// const [TV2, setTV2] = useState("");
-// const [DR3, setDR3] = useState("");
-// const [NOY3, setNOY3] = useState("");
-// const [NPV, setNPV] = useState(TV2/ ( 1 + DR3)^NOY3);
+const [TV2, setTV2] = useState("");
+const [DR3, setDR3] = useState("");
+const [NOY3, setNOY3] = useState("");
+const [NPV, setNPV] = useState(TV2/ ( 1 + DR3)^NOY3);
 
-// const [CTD1, setCTD1] = useState("");
-// const [CC1, setCC1] = useState("");
-// const [ND1, setND1] = useState(CTD1 - CC1);
+const [CTD1, setCTD1] = useState("");
+const [CC1, setCC1] = useState("");
+const [ND1, setND1] = useState(CTD1 - CC1);
 
-// const [PCF1, setPCF1] = useState("");
-// const [ND2, setND2] = useState("");
-// const [TPFCF1 , setTPFCF1] = useState(PCF1 - ND2);
+const [PCF1, setPCF1] = useState("");
+const [ND2, setND2] = useState("");
+const [TPFCF1 , setTPFCF1] = useState(PCF1 - ND2);
 
-// const [TPV1, setTPV1] = useState("");
-// const [NOS4, setNOS4] = useState("");
-// const [SP1, setSP1] = useState(TPV1 /NOS4);
+const [TPV1, setTPV1] = useState("");
+const [NOS4, setNOS4] = useState("");
+const [SP1, setSP1] = useState(TPV1 /NOS4);
 
-// Question
 function qq1(val){
 
-  setQ1(val.target.value);
+    setQ1(val.target.value);
+  }
+function qq2(val){
+
+  setQ2(val.target.value);
 }
-// function qq2(val){
+function qq3(val){
 
-//   setQ2(val.target.value);
-// }
-// function qq3(val){
+  setQ3(val.target.value);
+}
+function qq4(val){
 
-//   setQ3(val.target.value);
-// }
-// function qq4(val){
+  setQ4(val.target.value);
+}
+function qq5(val){
 
-//   setQ4(val.target.value);
-// }
-// function qq5(val){
+  setQ5(val.target.value);
+}
+function qq6(val){
 
-//   setQ5(val.target.value);
-// }
-// function qq6(val){
+  setQ6(val.target.value);
+}
+function qq7(val){
 
-//   setQ6(val.target.value);
-// }
-// function qq7(val){
+  setQ7(val.target.value);
+}
+function qq8(val){
 
-//   setQ7(val.target.value);
-// }
-// function qq8(val){
+  setQ8(val.target.value);
+}
+function qq9(val){
 
-//   setQ8(val.target.value);
-// }
-// function qq9(val){
+  setQ9(val.target.value);
+}
+function qq10(val){
 
-//   setQ9(val.target.value);
-// }
-// function qq10(val){
+  setQ10(val.target.value);
+}
+function qq11(val){
 
-//   setQ10(val.target.value);
-// }
-// function qq11(val){
+  setQ11(val.target.value);
+}
+function qq12(val){
 
-//   setQ11(val.target.value);
-// }
-// function qq12(val){
+  setQ12(val.target.value);
+}
+function qq13(val){
 
-//   setQ12(val.target.value);
-// }
-// function qq13(val){
+  setQ13(val.target.value);
+}
+function qq14(val){
 
-//   setQ13(val.target.value);
-// }
-// function qq14(val){
+  setQ14(val.target.value);
+}
+function qq15(val){
 
-//   setQ14(val.target.value);
-// }
-// function qq15(val){
+  setQ15(val.target.value);
+}
+function qq16(val){
 
-//   setQ15(val.target.value);
-// }
-// function qq16(val){
+  setQ16(val.target.value);
+}
+function qq17(val){
 
-//   setQ16(val.target.value);
-// }
-// function qq17(val){
+  setQ17(val.target.value);
+}
+function qq18(val){
 
-//   setQ17(val.target.value);
-// }
-// function qq18(val){
+  setQ18(Q18);
+}
 
-//   setQ18(Q18);
-// }
+// Profit loss
+function op1(){
 
-// // Profit loss
-// function op1(){
+    setOP1(SOS + SOP + OOR);
+}
 
-//     setOP1(SOS + SOP + OOR);
-// }
+function pbt1(){
 
-// function pbt1(){
+  setPBT1(SOS + SOP + OOR);
+}
 
-//   setPBT1(SOS + SOP + OOR);
-// }
+function pat1(){
 
-// function pat1(){
+setPAT1(PATs / OOS);
+}
 
-// setPAT1(PATs / OOS);
-// }
+function eps(){
 
-// function eps(){
+  setEPS(PATs / OOS);
+}
 
-//   setEPS(PATs / OOS);
-// }
+//Balance sheet
 
-// //Balance sheet
+function she1(){
 
-// function she1(){
+  setSHE1(ASS1 - LIA1);
+}
+function sc1(){
 
-//   setSHE1(ASS1 - LIA1);
-// }
+setSC1(FV1 * NOS1);
+}
+function nos1(){
 
-// function sc1(){
+setNOS2(SC2 / FV2);
+}
 
-// setSC1(FV1 * NOS1);
-// }
+function tl1(){
 
+setTL1(SHF1 + NCL1 + CL1);
+}
 
 
+function she2(){
 
+  setSHE2(SC3 + R1 + S1);
+}
 
-// function nos1(){
+function gb1(){
 
-// setNOS2(SC2 / FV2);
-// }
+setGB1(PYDB1 + ADY1 - DDY1);
+}
 
-// function tl1(){
+function td1(){
 
-// setTL1(SHF1 + NCL1 + CL1);
-// }
+setTD1(PYDV1 - CYD1 - DDY2 );
+}
 
+function nb1(){
 
-// function she2(){
+setNB1(GB2 - TD2);
+}
 
-//   setSHE2(SC3 + R1 + S1);
-// }
 
-// function gb1(){
+function ta1(){
 
-// setGB1(PYDB1 + ADY1 - DDY1);
-// }
+  setTA1(FA1 + CA1);
+}
 
-// function td1(){
+function ass2(){
 
-// setTD1(PYDV1 - CYD1 - DDY2 );
-// }
+setASS2(SHF2 + LIA2);
+}
+//Cash flow 
+function cf1(){
 
-// function nb1(){
+setCF1(NCOA1 + NCIA1 + NCFA1);
+}
 
-// setNB1(GB2 - TD2);
-// }
+//Profitability
+function ebit1(){
 
+setEBIT1(OR1 - OE1);
+}
 
-// function ta1(){
 
-//   setTA1(FA1 + CA1);
-// }
+function or2(){
 
-// function ass2(){
+  setOR2(TR2 - OI1);
+}
 
-// setASS2(SHF2 + LIA2);
-// }
+function oe2(){
 
-// //Cash flow 
-// function cf1(){
+setOE2(TE2 - FC1 - DA1);
+}
 
-// setCF1(NCOA1 + NCIA1 + NCFA1);
-// }
+function ebit3(){
 
-// //Profitability
-// function ebit1(){
+setEBIT3(EBIT2 / OR3);
+}
 
-// setEBIT1(OR1 - OE1);
-// }
+function patm1(){
 
+setPATM1(PAT2 / TR3);
+}
 
-// function or2(){
 
-//   setOR2(TR2 - OI1);
-// }
+function roe1(){
 
-// function oe2(){
+  setROE1(NP1 / SHE3 *100);
+}
 
-// setOE2(TE2 - FC1 - DA1);
-// }
+function npm1(){
 
-// function ebit3(){
+  setNPM1(NP2 / NS1 *100);
+}
 
-// setEBIT3(EBIT2 / OR3);
-// }
+function at1(){
 
-// function patm1(){
+  setAT1(NS2 / ATA1);
+}
 
-// setPATM1(PAT2 / TR3);
-// }
+function fl1(){
 
+  setFL1(ATA2 / SHE4);
+}
 
-// function roe1(){
+function roa1(){
 
-//   setROE1(NP1 / SHE3 *100);
-// }
+  setROA1(NI1 + I1 *(1 - TR4) / TAA1);
+}
 
-// function npm1(){
+function taa2(){
 
-//   setNPM1(NP2 / NS1 *100);
-// }
+  setTAA2(LAA1 + RAA1 /2);
+}
 
-// function at1(){
+function roce1(){
 
-//   setAT1(NS2 / ATA1);
-// }
+  setROCE1(PBIT1 * OCE1);
+}
 
-// function fl1(){
+function oce2(){
 
-//   setFL1(ATA2 / SHE4);
-// }
+  setOCE2(STD1 + LTD1 + E1);
+}
 
-// function roa1(){
+// Leverage ratius
+function icr1(){
 
-//   setROA1(NI1 + I1 *(1 - TR4) / TAA1);
-// }
+  setICR1(EBIT4 / FA2);
+}
 
-// function taa2(){
+function ebit5(){
 
-//   setTAA2(LAA1 + RAA1 /2);
-// }
+  setEBIT5(EBITDA1 - DA2);
+}
 
-// function roce1(){
+function ebitda2(){
 
-//   setROCE1(PBIT1 * OCE1);
-// }
+  setEBITDA2(R2 - E2 -(FC2 - D1));
+}
 
-// function oce2(){
+function dter1(){
 
-//   setOCE2(STD1 + LTD1 + E1);
-// }
+  setDTER1(TD3 / TE3);
+}
 
-// // Leverage ratius
-// function icr1(){
+function td4(){
 
-//   setICR1(EBIT4 / FA2);
-// }
+  setTD4(LTB1 + STB1);
+}
 
-// function ebit5(){
 
-//   setEBIT5(EBITDA1 - DA2);
-// }
+function dtar1(){
 
-// function ebitda2(){
+  setDTAR1(TD5 / TA2);
+}
 
-//   setEBITDA2(R2 - E2 -(FC2 - D1));
-// }
 
-// function dter1(){
+function ata7(){
 
-//   setDTER1(TD3 / TE3);
-// }
+  ATA7(LA1 + RA1 /2);
+}
 
-// function td4(){
+function ata3(){
 
-//   setTD4(LTB1 + STB1);
-// }
+  setATA3(LATA1 + RATA1 /2);
+}
 
 
-// function dtar1(){
+function ate1(){
 
-//   setDTAR1(TD5 / TA2);
-// }
+setATE1(LATE1 + RATE1 /2);
+}
 
+function flr1(){
 
-// function ata7(){
+  setFLR1(ATA4 + ATE );
+}
 
-//   ATA7(LA1 + RA1 /2);
-// }
+//Valuation Ratio
+function psr1(){
 
-// function ata3(){
+  setPSR1(CSP1 / SPS1);
+}
 
-//   setATA3(LATA1 + RATA1 /2);
-// }
+function sps6(){
 
+  setSPS6(TR5 / NOS3);
+}
 
-// function ate1(){
+function bv1(){
 
-// setATE1(LATE1 + RATE1 /2);
-// }
+  setBV1(SC4 + R3 - RR1 / TOS1);
+}
 
-// function flr1(){
+function pbv1(){
 
-//   setFLR1(ATA4 + ATE );
-// }
+  setPBV1(CSP2 / BV2);
+}
 
-// //Valuation Ratio
-// function psr1(){
+function eps3(){
 
-//   setPSR1(CSP1 / SPS1);
-// }
-
-// function sps6(){
-
-//   setSPS6(TR5 / NOS3);
-// }
-
-// function bv1(){
-
-//   setBV1(SC4 + R3 - RR1 / TOS1);
-// }
-
-// function pbv1(){
-
-//   setPBV1(CSP2 / BV2);
-// }
-
-// function eps3(){
-
-//   setEPS3(PAT3 / TOS2);
-// }
+  setEPS3(PAT3 / TOS2);
+}
   
-// function per1(){
+function per1(){
   
-//   setPER1(CSP3 / EPS4 );
-//   }
+  setPER1(CSP3 / EPS4 );
+  }
   
-// // OPerating ratius
-//   function fat1(){
+// OPerating ratius
+  function fat1(){
   
-//     setFAT1(OR4 - TAT1);
-//   }
+    setFAT1(OR4 - TAT1);
+  }
   
-//   function tat2(){
+  function tat2(){
   
-//     setTAT2(LATA2 + RATA2 /2);
-//   }
+    setTAT2(LATA2 + RATA2 /2);
+  }
   
-//   function lwc(){
+  function lwc(){
   
-//     setLWC(LCA2 + LCL2 /2);
-//   }
+    setLWC(LCA2 + LCL2 /2);
+  }
   
-//   function rwc(){
+  function rwc(){
   
-//     setRWC(RCA2 + RCL2 /2);
-//   }
+    setRWC(RCA2 + RCL2 /2);
+  }
   
   
-//   function awc1(){
+  function awc1(){
   
-//     setAWC1(LWC1 + RWC1 /2);
-//   }
+    setAWC1(LWC1 + RWC1 /2);
+  }
   
-//   function wct1(){
+  function wct1(){
   
-//     setWCT1(R5 / AWC2);
-//   }
+    setWCT1(R5 / AWC2);
+  }
 
-//   function ata6(){
+  function ata6(){
   
-//     setATA6(LATA3 + RATA3 /2);
-//   }
+    setATA6(LATA3 + RATA3 /2);
+  }
   
-//   function tat3(){
+  function tat3(){
   
-//     setTAT3(OR5 / ATA5);
-//   }
+    setTAT3(OR5 / ATA5);
+  }
   
-//   function it1(){
+  function it1(){
   
-//     setIT1(COGS1 / AI1);
-//   }
+    setIT1(COGS1 / AI1);
+  }
   
-//   function ai2(){
+  function ai2(){
 
-//     setAI2(LAT1 + RAT1 /2);
-//   }
+    setAI2(LAT1 + RAT1 /2);
+  }
   
-//   function cogs2(){
+  function cogs2(){
   
-//     setCOGS2(COMC1 + POST1 + SSC1 + PF1);
-//   }
+    setCOGS2(COMC1 + POST1 + SSC1 + PF1);
+  }
   
-//   function ind1(){
+  function ind1(){
   
-//     setIND1(365 / IT2);
-//   }
+    setIND1(365 / IT2);
+  }
   
-//   function rtr1(){
+  function rtr1(){
   
-//     setRTR1(R4 / AR1);
-//   }
+    setRTR1(R4 / AR1);
+  }
   
-//   function ar2(){
+  function ar2(){
   
-//     setAR2(LAR + RAR /2);
-//   }
+    setAR2(LAR + RAR /2);
+  }
   
-//   function dso1(){
+  function dso1(){
   
-//     setDSO1(365 / RTR2);
-//   }
+    setDSO1(365 / RTR2);
+  }
   
 
-//   //Extra
-//   function gpm1(){
+  //Extra
+  function gpm1(){
   
-//     setGPM1(GP1 * NS3);
-//   }
+    setGPM1(GP1 * NS3);
+  }
   
-//   function gp2(){
+  function gp2(){
   
-//     setGP2(NS4 - COGS3);
-//   }
-  
-  
-//   function fv3(){
-  
-//     setFV3(A1 *(+ OCR1)^ NOY1);
-//   }
-  
-//   function pv1(){
-  
-//     setPV1(A2 /(+ DR1)^ NOY2);
-//   }
+    setGP2(NS4 - COGS3);
+  }
   
   
-//   function fcf1(){
+  function fv3(){
   
-//     setFCF1(COA1 - CE1);
-//   }
+    setFV3(A1 *(+ OCR1)^ NOY1);
+  }
+  
+  function pv1(){
+  
+    setPV1(A2 /(+ DR1)^ NOY2);
+  }
+  
+  
+  function fcf1(){
+  
+    setFCF1(COA1 - CE1);
+  }
   
 
 
-//   function fcf3(){
+  function fcf3(){
   
-//     setFCF3(PV2 * (1 + GR1));
-//   }
+    setFCF3(PV2 * (1 + GR1));
+  }
   
 
-//   function tv1(){
+  function tv1(){
   
-//     setTV1(FCF2 *(1+ TGR1)/ (DR2 - TGR1 ));
-//   }
+    setTV1(FCF2 *(1+ TGR1)/ (DR2 - TGR1 ));
+  }
 
-//   function npv(){
+  function npv(){
   
-//     setNPV(TV2/ ( 1 + DR3)^NOY3);
-//   }
+    setNPV(TV2/ ( 1 + DR3)^NOY3);
+  }
   
-//   function nd1(){
+  function nd1(){
   
-//     setND1(CTD1 - CC1);
-//   }
+    setND1(CTD1 - CC1);
+  }
   
-//   function tpfcf1(){
+  function tpfcf1(){
   
-//     setTPFCF1(PCF1 - ND2);
-//   }
+    setTPFCF1(PCF1 - ND2);
+  }
 
-//   function sp1(){
+  function sp1(){
   
-//     setSP1(TPV1 /NOS4);
-//   }
-  
+    setSP1(TPV1 /NOS4);
+  }
 const handleSubmit = (e) => {
   e.preventDefault();
-  // setvalue("");
+//   setdata(value);
+  setvalue("");
 }
-
 return (
     <div className="App">
-        <div className="container">
-        
-        {/* Question */}
+        <div className="number-input">
+
         <div className="row">
         <div className="column">
                 <lable>What does the Company do?</lable>
@@ -839,8 +829,7 @@ return (
                 <button onClick={() =>setQQ1(true)}>Submit</button>
                 {QQ1?<textarea>{Q1}</textarea>:null}
         </div>
-
-        {/* <div className="column">
+        <div className="column">
                 <lable>Who are its promoter? What are their background?</lable>
                 <textarea type="text" onChange={qq2}/>
                 <button onClick={() =>setQQ2(true)}>Submit</button>
@@ -859,11 +848,10 @@ return (
                 <textarea type="text" onChange={qq4}/>
                 <button onClick={() =>setQQ4(true)}>Submit</button>
                 {QQ4?<textarea>{Q4}</textarea>:null}
-        </div> */}
-
+        </div>
         </div>
 
-        {/* <div className="row">
+<div className="row">
         <div className="column">
                 <lable>Are they running the plant in full Capacity?</lable>
                 <textarea type="text" onChange={qq5}/>
@@ -1016,13 +1004,10 @@ return (
 
             </form>
           </div>
-        </div> */}
-
-
-
+        </div>
         {/* profit loss */}
 
-        {/* <div className="row">
+        <div className="row">
         <div className="column">
           <form onSubmit={handleSubmit}>
                 <lable>Profit before tax</lable>
@@ -1096,11 +1081,11 @@ return (
 
             </form>
           </div>
-        </div> */}
+        </div>
 
-        {/* Balance sheet */}
+ {/* Balance sheet */}
       
-        {/* <div className="row">
+        <div className="row">
         <div className="column">
           <form onSubmit={handleSubmit}>
                 <lable>Share Capital</lable>
@@ -1267,12 +1252,11 @@ return (
                 <h4>{ASS2}</h4>
             </form>
           </div>
+        </div>
+        
+         {/* cash flow */}
 
-        </div> */}
-
-        {/* cash flow */}
-
-        {/* <div className="row">
+        <div className="row">
         <div className="column">
           <form onSubmit={handleSubmit}>
                 <lable>Net Cash Flow from OA</lable>
@@ -1353,11 +1337,11 @@ return (
 
             </form>
           </div>
-        </div> */}
+        </div> 
 
         {/* Profitability ratius */}
 
-        {/* <div className="row">
+        <div className="row">
         <div className="column">
           <form onSubmit={handleSubmit}>
                 <lable>EBITDA</lable>
@@ -1681,10 +1665,10 @@ return (
 
             </form>
           </div>
-        </div>         */}
+        </div>        
 
          {/* Leverage ratius */}
-        {/* <div className="row">
+        <div className="row">
         <div className="column">
              <form onSubmit={handleSubmit}>
                 <lable>Left asset</lable>
@@ -1757,9 +1741,9 @@ return (
             </form>
           </div>
 
-        </div> */}
+        </div>
         
-        {/* <div className="row">
+        <div className="row">
         <div className="column">
           <form onSubmit={handleSubmit}>
                 <lable>Average Total Assets</lable>
@@ -1841,9 +1825,9 @@ return (
 
             </form>
           </div>
-        </div> */}
+        </div>
         {/* Valuation Ratio */}
-        {/* <div className="row">
+        <div className="row">
         <div className="column">
           <form onSubmit={handleSubmit}>
                 <lable>Current Share price</lable>
@@ -1916,10 +1900,10 @@ return (
             </form>
           </div>
 
-        </div> */}
+        </div>
         {/* Operating ratius */}
 
-        {/* <div className="row">
+        <div className="row">
         <div className="column">
           <form onSubmit={handleSubmit}>
                 <lable>Operating revenue</lable>
@@ -2225,9 +2209,9 @@ return (
                 
             </form>
           </div>
-        </div> */}
+        </div> 
         {/* EXTRA  */}
-        {/* <div className="row">
+        <div className="row">
         <div className="column">
           <form onSubmit={handleSubmit}>
                 <lable>Amount</lable>
@@ -2412,38 +2396,37 @@ return (
             </form>
           </div>
         </div>
-         */}
-        <div className="row"></div>
         
         </div>
-        
-            <div>
+
+        <div>
               {/* Question */}
-              <textarea>What does the Company do? :- {Q1}</textarea>
-              {/* <textarea>Who are its promoter? What are their background? :- {Q2}</textarea>
-              <textarea>What do they manufacture (in case it is a manufacturing Company) :- {Q3}</textarea>
-              <textarea>How many plant do they have and Where are they located? :- {Q4}</textarea>
-              <textarea>Are they running the plant in full Capacity? :- {Q5}</textarea>
-              <textarea>What Kind of raw material is required? :- {Q6}</textarea>
-              <textarea>Who are the Company client or end users? :- {Q7}</textarea>
-              <textarea>Who are the Competitors? :- {Q8}</textarea>
-              <textarea>Who are the major shareHolder of the Company? :- {Q9}</textarea>
-              <textarea>Do they plan to lanch any new products? :- {Q10}</textarea>
-              <textarea>Do they plan to expand to different Countries? :- {Q11}</textarea>
-              <textarea>What is the revenue mix? which product sell the mast? :- {Q12}</textarea>
-              <textarea>Do they operate under a heavy regultory environment? :- {Q13}</textarea>
-              <textarea>Who are their bank auditor? :- {Q14}</textarea>
-              <textarea>How many employee do they have? Does the Company have labor issue? :- {Q15}</textarea>
-              <textarea>What are the entry barrier for new participants to enter the industry? :- {Q16}</textarea>
-              <textarea>Is the Company manufacturing product that can be easily replicated in a country with cheap Labor? :- {Q17}</textarea>
-              <textarea>Does the Computer have too many subsidiaries? :- {Q18}</textarea> */}
+              <>
+              <h4>What does the Company do? :- {Q1}</h4>
+              <h4>Who are its promoter? What are their background? :- {Q2}</h4>
+              <h4>What do they manufacture (in case it is a manufacturing Company) :- {Q3}</h4>
+              <h4>How many plant do they have and Where are they located? :- {Q4}</h4>
+              <h4>Are they running the plant in full Capacity? :- {Q5}</h4>
+              <h4>What Kind of raw material is required? :- {Q6}</h4>
+              <h4>Who are the Company client or end users? :- {Q7}</h4>
+              <h4>Who are the Competitors? :- {Q8}</h4>
+              <h4>Who are the major shareHolder of the Company? :- {Q9}</h4>
+              <h4>Do they plan to lanch any new products? :- {Q10}</h4>
+              <h4>Do they plan to expand to different Countries? :- {Q11}</h4>
+              <h4>What is the revenue mix? which product sell the mast? :- {Q12}</h4>
+              <h4>Do they operate under a heavy regultory environment? :- {Q13}</h4>
+              <h4>Who are their bank auditor? :- {Q14}</h4>
+              <h4>How many employee do they have? Does the Company have labor issue? :- {Q15}</h4>
+              <h4>What are the entry barrier for new participants to enter the industry? :- {Q16}</h4>
+              <h4>Is the Company manufacturing product that can be easily replicated in a country with cheap Labor? :- {Q17}</h4>
+              <h4>Does the Computer have too many subsidiaries? :- {Q18}</h4>
               {/* profit loss */}
-              {/* <h4>Operating revenue :- {OP1}</h4>
+              <h4>Operating revenue :- {OP1}</h4>
               <h4>Profit before tax :- {PBT1}</h4>
               <h4>Profit after tax :- {PAT1}</h4>
-              <h4>Earning per share :- {EPS}</h4> */}
+              <h4>Earning per share :- {EPS}</h4>
               {/* Balance sheet */}
-              {/* <h4>ShareHolder equity :- {SHE1}</h4>
+              <h4>ShareHolder equity :- {SHE1}</h4>
               <h4>Share Capital :- {SC1}</h4>
               <h4>Number of shares :- {NOS2}</h4>
               <h4>Total Libraries :- {TL1}</h4>
@@ -2452,11 +2435,11 @@ return (
               <h4>Total depreciations :- {TD1}</h4>
               <h4>Earning per share :- {NB1}</h4>
               <h4>Total Assets :- {TA1}</h4>
-              <h4>Assets :- {ASS2}</h4> */}
+              <h4>Assets :- {ASS2}</h4>
               {/* cash flow */}
-              {/* <h4>Cash Flow :- {CF1}</h4> */}
+              <h4>Cash Flow :- {CF1}</h4>
               {/* Profitability ratius  */}
-              {/* <h4>Operating revenue :- {OR2}</h4>
+              <h4>Operating revenue :- {OR2}</h4>
               <h4>Operating Expenses :- {OE2}</h4>
               <h4>Ebitda :- {EBIT1}</h4>
               <h4>Number of shares :- {EBIT3}</h4>
@@ -2469,9 +2452,9 @@ return (
               <h4>Total Average assert :- {TAA2}</h4>
               <h4>Return on assert :- {ROA1}</h4>
               <h4>ROCE :- {ROCE1}</h4>
-              <h4>Number of shares :- {OCE2}</h4> */}
+              <h4>Number of shares :- {OCE2}</h4>
               {/* Leverage ratius */}
-              {/* <h4>Interest Coverage Ratio :- {ICR1}</h4>
+              <h4>Interest Coverage Ratio :- {ICR1}</h4>
               <h4>EBIT :- {EBIT5}</h4>
               <h4>Share Capital :- {EBITDA2}</h4>
               <h4>Total Debt :- {TD4}</h4>
@@ -2480,16 +2463,16 @@ return (
               <h4>Debt to asset ratio :- {DTAR1}</h4>
               <h4>Average total assets :- {ATA3}</h4>
               <h4>Average total equity :- {ATE1}</h4>
-              <h4>Earning per share :- {FLR1}</h4> */}
+              <h4>Earning per share :- {FLR1}</h4>
               {/* Valuation Ratio */}
-              {/* <h4>Sales per share :- {SPS6}</h4>
+              <h4>Sales per share :- {SPS6}</h4>
               <h4>Price to Sales ratio :- {PSR1}</h4>
               <h4>Book value :- {BV1}</h4>
               <h4>price to Book value :- {PBV1}</h4>
               <h4>Earning per share :- {EPS3}</h4>
-              <h4>Price to Earning ratio :- {PER1}</h4> */}
+              <h4>Price to Earning ratio :- {PER1}</h4>
               {/* Operating ratius  */}
-              {/* <h4>Total Average assert :- {TAT2}</h4>
+              <h4>Total Average assert :- {TAT2}</h4>
               <h4>Fixed Assets Turnover :- {FAT1}</h4>
               <h4>Left Working Capital :- {LWC}</h4>
               <h4>Right Working Capital :- {RWC}</h4>
@@ -2503,9 +2486,9 @@ return (
               <h4>Inventory No of days :- {IND1}</h4>
               <h4>Average Receivable :- {AR2}</h4>
               <h4>Receivable Turnover ratio :- {RTR1}</h4>
-              <h4>Day sales outstanding :- {DSO1}</h4> */}
+              <h4>Day sales outstanding :- {DSO1}</h4>
               {/* EXTRA */}
-              {/* <h4>Gross profit :- {GP2}</h4>
+              <h4>Gross profit :- {GP2}</h4>
               <h4>Gross Profit Margins :- {GPM1}</h4>
               <h4>Future value :- {FV3}</h4>
               <h4>present value :- {PV1}</h4>
@@ -2515,13 +2498,15 @@ return (
               <h4>NPV :- {NPV}</h4>
               <h4>Net Debt :- {ND1}</h4>
               <h4>Total PV of FCF :- {TPFCF1}</h4>
-              <h4>Share price :- {SP1}</h4> */}
+              <h4>Share price :- {SP1}</h4>
+              </>
+              
               
             </div>
-            <h1>hi</h1>
     </div>
         
 );
 }
 
-export default App;
+
+export default Post;
