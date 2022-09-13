@@ -821,7 +821,7 @@ const handleSubmit = (e) => {
 return (
     <div className="App">
         <div className="number-input">
-
+        <h1>Don't reload the page otherwise the output will be erase </h1>
         <div className="row">
         <div className="column">
                 <lable>What does the Company do?</lable>
@@ -2400,6 +2400,7 @@ return (
         </div>
 
         <div>
+              <h3>Output</h3>
               {/* Question */}
               <>
               <h4>What does the Company do? :- {Q1}</h4>
