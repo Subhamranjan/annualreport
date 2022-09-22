@@ -821,7 +821,8 @@ const handleSubmit = (e) => {
 return (
     <div className="App">
         <div className="number-input">
-        <h1>Don't reload the page otherwise the output will be erase </h1>
+        <h1>Don't reload the page otherwise the output will be erase 
+            <a href={require("./report.pdf")} download="AnnualReport">PDF</a></h1>
         <div className="row">
         <div className="column">
                 <lable>What does the Company do?</lable>
